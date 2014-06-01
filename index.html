@@ -2,29 +2,32 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Bootstrap, from Twitter</title>
+  <title>UFGMemo - Receba notificações da comunidade UFG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 </head>
 
-<body class="">
-  <div class="navbar navbar-default navbar-static-top">
+<body>
+  <div class="navbar navbar-default navbar-static-top navbar-inverse">
     <style>
-      .body{padding-top:70px}
+      .body {
+        padding-top: 70px
+      }
     </style>
     <div class="container">
       <div class="navbar-header">
+        <a class="navbar-brand">UFGMemo</a>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Brand</a>
+
       </div>
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -32,67 +35,91 @@
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">Contacts</a>
+            <a href="#">Contato</a>
           </li>
         </ul>
       </div>
     </div>
   </div>
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div class="item active">
+      <img src="http://placehold.it/1920x600">
+      <div class="carousel-caption">
+        <h2>Receba notificações da comunidade UFG de maneira simples e rápida</h2>
+        <p>Description</p>
+      </div>
+    </div>
+    <div class="carousel-inner"></div>
+    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="jumbotron">
-          <h1>UFGMemo - Seu app de notificações da UFG</h1>
-          <p>Aplicativo para receber notificações enviadas para a comunidade da UFG através do seu iPhone, iPod touch, iPad, Android ou Windows Phone.</p>
-          <a href="/appstore" class="download-btn appstore">Disponível na App Store</a>
-          <a href="/windowsphone" class="download-btn wp">Disponível na Windows Phone Store</a>
-          <a href="/android" class="download-btn android">Disponível para Android</a>
-          <br>
-        </div>
+        <h1 class="text-center">Disponível para as plataformas Android,iOS e Windows Phone</h1>
       </div>
     </div>
     <div class="row">
       <div class="col-md-4">
-        <h2>Por que usar o UFGMemo?
-          <br>
-        </h2>
-        <p>Veja abaixo os recursos do app. Clique nas imagens para aumentar.</p>
-        <a class="btn btn-primary" href="#">View details</a>
-      </div>
-
-      <div class="col-md-4">
-        <h2>Notificações</h2>
-        <p>Receba avisos de avaliação (prova) iminente; Notas e frequências; Aviso de vencimento de empréstimo na biblioteca; Comunicados gerais para a comunidade UFG. Tendo a possibilidade de ler e marcar como não lida para uma uma consulta futura.</p>
-        <a class="btn btn-primary" href="#">View details</a>
+        <a href="https://play.google.com/store/apps/details?id=br.ufg.inf.fs.ufgmemo">
+          <img alt="Get it on Google Play" src="..\..\..\Dropbox\Faculdade\Portal\pt-br_generic_rgb_wo_45.png">
+        </a>
       </div>
       <div class="col-md-4">
-        <h2>Autonomia na escolha dos remetentes</h2>
-        <p>Pode terá a possibilidade de escolher os remetentes que deseja receber notificação. Por exemplo: Coordenador do curso, Direção de unidade do curso, Biblioteca, Pró-reitorias, Reitoria e Docente da disciplina.</p>
-        <a class="btn btn-primary" href="#">View details</a>
+        <a href="https://play.google.com/store/apps/details?id=br.ufg.inf.fs.ufgmemo">
+          <img alt="Get it on Google Play" src="..\..\..\Dropbox\Faculdade\Portal\Download_on_the_App_Store_Badge_PTBR_135x40.png">
+        </a>
       </div>
       <div class="col-md-4">
-        <h2>Filtros nas notificações
-        </h2>
-        <p>Você poderá filtrar suas notificações para que somente mostre as não lidas de uma determinada disciplina. Além da possibilidade de ordenar as notificações por data (ascendente ou descendente).</p>
-        <a class="btn btn-primary" href="#">View details</a>
+        <a href="https://play.google.com/store/apps/details?id=br.ufg.inf.fs.ufgmemo">
+          <img alt="Get it on Google Play" src="..\..\..\Dropbox\Faculdade\Portal\WindowsStore_badge_BrazilianPortuguese_xc_Black_small_154x40.png">
+        </a>
       </div>
-
     </div>
-
+    <div class="row">
+      <div class="col-md-12">
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="text-center">Notificações</h1>
+        <img src="http://placehold.it/1024x600" class="img-responsive">
+        <p class="text-justify">Receba notificações sobre avaliações; Notas e frequências; Aviso de vencimento de empréstimo na biblioteca; Avisos sobre processos seletivos; Comunicados gerais para a comunidade UFG. Tendo a possibilidade de ler e marcar como não lida para uma
+          uma consulta futura. Tudo de maneira fácil e rápida.</p>
+      </div>
+      <div class="col-md-6">
+        <h1 class="text-center">Filtros nas notificações</h1>
+        <img src="http://placehold.it/1024x600" class="img-responsive">
+        <p class="text-justify">Você poderá filtrar suas notificações para que somente mostre as não lidas de uma determinada disciplina. Além da possibilidade de ordenar as notificações por data (ascendente ou descendente).</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="text-center">Autonomia na escolha dos remetentes</h1>
+        <img src="http://placehold.it/1024x600" class="img-responsive">
+        <p class="text-justify">O app permite você escolher os remetentes que deseja receber notificação. Por exemplo: Coordenador do curso, Direção de unidade do curso, Biblioteca, Pró-reitorias, Reitoria e Docente da disciplina.</p>
+      </div>
+      <div class="col-md-6">
+        <h1 class="text-center">Cadastre-se ou Receba Notificações Públicas</h1>
+        <img src="http://placehold.it/1024x600" class="img-responsive img-rounded">
+        <p class="text-justify">Caso você não queria se cadastrar no UFGMemo você pode pode entrar como visitante e ter acesso às notificações públicas da Universidade Federal de Goiás.</p>
+      </div>
+    </div>
   </div>
+  <hr>
 
-
-
-
-
-
-
-
-
-
-
-
-
+  <footer style=";text-align: center;">
+    <p class="">
+      <b>UFGMemo</b>
+      <br>O seu app de notificações da UFG
+      <br>© Copyright 2014 Luiz Henrique Fernandes da Silva. Todos os Direitos Reservados.
+      <br>Esse app é totalmente independente e não tem qualquer relação com a UFG.</p>
+  </footer>
 
 </body>
 
