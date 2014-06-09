@@ -2,11 +2,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>UFGMemo - Receba notificações da comunidade UFG</title>
+  <title>UFGMemo - Seu aplicativo de notificações da Universidade Federal de Goiás</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="Luiz Henrique Fernandes da Silva">
   <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 </head>
@@ -14,9 +15,7 @@
 <body>
   <div class="navbar navbar-default navbar-static-top navbar-inverse">
     <style>
-      .body {
-        padding-top: 70px
-      }
+      .body{padding-top:70px}
     </style>
     <div class="container">
       <div class="navbar-header">
@@ -35,21 +34,58 @@
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">Contato</a>
+            <a href="#recursos">Recursos</a>
           </li>
+          <li>
+            <a href="#download">Download</a>
+          </li>
+          <li>
+            <a href="contato.html">Contato</a>
+          </li>
+
         </ul>
       </div>
     </div>
   </div>
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <div class="item active">
-      <img src="http://placehold.it/1920x600">
-      <div class="carousel-caption">
-        <h2>Receba notificações da comunidade UFG de maneira simples e rápida</h2>
-        <p>Description</p>
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <!-- Indicadores -->
+    <ol class="carousel-indicators" style="color:black">
+      <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+
+      <li data-target="#carousel-example" data-slide-to="1"></li>
+
+      <li data-target="#carousel-example" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+
+      <!-- Items -->
+      <div class="item active">
+
+        <img src="Grande/fundoGrandeLista.png">
+        <div class="carousel-caption">
+          <h3 style="color:black">Receba notificações da comunidade UFG de maneira simples e rápida</h3>
+        </div>
       </div>
+
+      <div class="item">
+
+        <img src="Grande/fundoGrandeRemetentes.png">
+        <div class="carousel-caption">
+          <h3 style="color:black">Escolha os remetentes que deseja receber notificações</h3>
+        </div>
+      </div>
+
+      <div class="item">
+
+        <img src="Grande/fundoGrandeInicial.png">
+        <div class="carousel-caption">
+          <h3 style="color:black">Totalmente gratuito e disponível para as plataformas Android, iOS e WindowsPhone</h3>
+        </div>
+      </div>
+
+      <!-- Controles -->
     </div>
-    <div class="carousel-inner"></div>
     <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
     </a>
@@ -57,26 +93,27 @@
       <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
   </div>
-  <div class="container">
+
+  <div id="download" class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="text-center">Disponível para as plataformas Android,iOS e Windows Phone</h1>
+        <h1 class="text-center">Disponível para as plataformas Android, iOS e Windows Phone</h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4">
+      <div style="text-align:center" class="col-md-4">
         <a href="https://play.google.com/store/apps/details?id=br.ufg.inf.fs.ufgmemo">
-          <img alt="Get it on Google Play" src="..\..\..\Dropbox\Faculdade\Portal\pt-br_generic_rgb_wo_45.png">
+          <img alt="Disponível no Google Play" src="download/google.png">
         </a>
       </div>
-      <div class="col-md-4">
+      <div style="text-align:center" class="col-md-4">
         <a href="https://play.google.com/store/apps/details?id=br.ufg.inf.fs.ufgmemo">
-          <img alt="Get it on Google Play" src="..\..\..\Dropbox\Faculdade\Portal\Download_on_the_App_Store_Badge_PTBR_135x40.png">
+          <img alt="Disponível na AppleStore" src="download/apple.png">
         </a>
       </div>
-      <div class="col-md-4">
+      <div style="text-align:center" class="col-md-4">
         <a href="https://play.google.com/store/apps/details?id=br.ufg.inf.fs.ufgmemo">
-          <img alt="Get it on Google Play" src="..\..\..\Dropbox\Faculdade\Portal\WindowsStore_badge_BrazilianPortuguese_xc_Black_small_154x40.png">
+          <img alt="Disponível na WindowsStore" src="download/windows.png">
         </a>
       </div>
     </div>
@@ -85,28 +122,28 @@
         <hr>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-6">
+    <div id="recursos" class="row">
+      <div class="col-md-6" align="middle">
         <h1 class="text-center">Notificações</h1>
-        <img src="http://placehold.it/1024x600" class="img-responsive">
+        <img src="Pequeno/fundoCelularLista.png" class="img-responsive">
         <p class="text-justify">Receba notificações sobre avaliações; Notas e frequências; Aviso de vencimento de empréstimo na biblioteca; Avisos sobre processos seletivos; Comunicados gerais para a comunidade UFG. Tendo a possibilidade de ler e marcar como não lida para uma
           uma consulta futura. Tudo de maneira fácil e rápida.</p>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6" align="middle">
         <h1 class="text-center">Filtros nas notificações</h1>
-        <img src="http://placehold.it/1024x600" class="img-responsive">
+        <img src="Pequeno/fundoCelularFiltro.png" class="img-responsive">
         <p class="text-justify">Você poderá filtrar suas notificações para que somente mostre as não lidas de uma determinada disciplina. Além da possibilidade de ordenar as notificações por data (ascendente ou descendente).</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6" align="middle">
         <h1 class="text-center">Autonomia na escolha dos remetentes</h1>
-        <img src="http://placehold.it/1024x600" class="img-responsive">
+        <img src="Pequeno/fundoCelularRemetentes.png" class="img-responsive">
         <p class="text-justify">O app permite você escolher os remetentes que deseja receber notificação. Por exemplo: Coordenador do curso, Direção de unidade do curso, Biblioteca, Pró-reitorias, Reitoria e Docente da disciplina.</p>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6" align="middle">
         <h1 class="text-center">Cadastre-se ou Receba Notificações Públicas</h1>
-        <img src="http://placehold.it/1024x600" class="img-responsive img-rounded">
+        <img src="Pequeno/fundoCelularCadastro.png" class="img-responsive">
         <p class="text-justify">Caso você não queria se cadastrar no UFGMemo você pode pode entrar como visitante e ter acesso às notificações públicas da Universidade Federal de Goiás.</p>
       </div>
     </div>
@@ -118,7 +155,7 @@
       <b>UFGMemo</b>
       <br>O seu app de notificações da UFG
       <br>© Copyright 2014 Luiz Henrique Fernandes da Silva. Todos os Direitos Reservados.
-      <br>Esse app é totalmente independente e não tem qualquer relação com a UFG.</p>
+      <br>Esse app é totalmente independente e não tem qualquer relação com a Universidade Federal de Goiás.</p>
   </footer>
 
 </body>
